@@ -23,7 +23,8 @@ function Services() {
 
       <div className="ser-bottom">
         <div className="text-with-photos">
-          <div className="ser-img">
+          <div className="square-2"></div>
+          <div className="ser-img" style={{ justifyContent: "end" }}>
             <img src={Group_36} className="ser-images" />
           </div>
           <div className="ser-texts">
@@ -37,11 +38,22 @@ function Services() {
               your idea and create a strong app foundation
             </p>
           </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(90deg, #1FB0F3 -0.4%, #9DDCFA 99.14%)",
+              transform: "rotate(312deg)",
+            }}
+            className="square-1"
+          ></div>
         </div>
 
         <div className="text-with-photos">
-          <div className="ser-img">
-            <img src={Group_36} className="ser-images" />
+          <div
+            style={{ order: "2", justifyContent: "start" }}
+            className="ser-img"
+          >
+            <img src={Group_35} className="ser-images" />
           </div>
           <div className="ser-texts">
             <p className="ser-title">
@@ -54,10 +66,19 @@ function Services() {
               your idea and create a strong app foundation
             </p>
           </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(90deg, #1FB0F3 -0.4%, #7B5DFA 99.14%)",
+              transform: "rotate(45deg)",
+            }}
+            className="square-1"
+          ></div>
         </div>
+
         <div className="text-with-photos">
-          <div className="ser-img">
-            <img src={Group_36} className="ser-images" />
+          <div style={{ justifyContent: "end" }} className="ser-img">
+            <img src={Group_34} className="ser-images" />
           </div>
           <div className="ser-texts">
             <p className="ser-title">
@@ -70,10 +91,22 @@ function Services() {
               your idea and create a strong app foundation
             </p>
           </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(90deg, #F3CC1F -0.4%, #7B5DFA 99.14%)",
+              transform: "rotate(312deg)",
+            }}
+            className="square-1"
+          ></div>
         </div>
+
         <div className="text-with-photos">
-          <div className="ser-img">
-            <img src={Group_36} className="ser-images" />
+          <div
+            style={{ order: "2", justifyContent: "start" }}
+            className="ser-img"
+          >
+            <img src={Group_33} className="ser-images" />
           </div>
           <div className="ser-texts">
             <p className="ser-title">
@@ -86,10 +119,19 @@ function Services() {
               your idea and create a strong app foundation
             </p>
           </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(90deg, #F3CC1F 13.59%, #FB634F 99.14%)",
+              transform: "rotate(45deg)",
+            }}
+            className="square-1"
+          ></div>
         </div>
+
         <div className="text-with-photos">
-          <div className="ser-img">
-            <img src={Group_36} className="ser-images" />
+          <div style={{ justifyContent: "end" }} className="ser-img">
+            <img src={Group_32} className="ser-images" />
           </div>
           <div className="ser-texts">
             <p className="ser-title">
@@ -102,10 +144,23 @@ function Services() {
               your idea and create a strong app foundation
             </p>
           </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(90deg, #F31F46 -0.4%, #FB634F 99.14%)",
+              transform: "rotate(132deg)",
+            }}
+            className="square-1"
+          ></div>
         </div>
+
         <div className="text-with-photos">
-          <div className="ser-img">
-            <img src={Group_36} className="ser-images" />
+          <div className="square-3"></div>
+          <div
+            style={{ order: "2", justifyContent: "start" }}
+            className="ser-img"
+          >
+            <img src={Group_31} className="ser-images" />
           </div>
           <div className="ser-texts">
             <p className="ser-title">
