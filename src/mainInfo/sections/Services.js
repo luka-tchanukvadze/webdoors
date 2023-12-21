@@ -57,7 +57,7 @@ function Services() {
           </div>
           <div className="ser-texts">
             <p className="ser-title">
-              <span className="ser-nums">01.</span> Analysis
+              <span className="ser-nums">02.</span> Wireframing
             </p>
             <p className="ser-text">
               We work with our clients to gather the requirements, use cases,
@@ -82,7 +82,7 @@ function Services() {
           </div>
           <div className="ser-texts">
             <p className="ser-title">
-              <span className="ser-nums">01.</span> Analysis
+              <span className="ser-nums">03.</span> Prototyping
             </p>
             <p className="ser-text">
               We work with our clients to gather the requirements, use cases,
@@ -110,7 +110,7 @@ function Services() {
           </div>
           <div className="ser-texts">
             <p className="ser-title">
-              <span className="ser-nums">01.</span> Analysis
+              <span className="ser-nums">04.</span> Design & code
             </p>
             <p className="ser-text">
               We work with our clients to gather the requirements, use cases,
@@ -135,7 +135,7 @@ function Services() {
           </div>
           <div className="ser-texts">
             <p className="ser-title">
-              <span className="ser-nums">01.</span> Analysis
+              <span className="ser-nums">05.</span> Testing & QA
             </p>
             <p className="ser-text">
               We work with our clients to gather the requirements, use cases,
@@ -164,7 +164,7 @@ function Services() {
           </div>
           <div className="ser-texts">
             <p className="ser-title">
-              <span className="ser-nums">01.</span> Analysis
+              <span className="ser-nums">06.</span> Deployment
             </p>
             <p className="ser-text">
               We work with our clients to gather the requirements, use cases,
