@@ -16,8 +16,8 @@ function Services() {
           <img src={Group_83} />
         </div>
         <div className="ser-title">
-          Services
-          <img className="vector" src={Vector} />
+          <p>Services</p>
+          <img className="vector serv-vec" src={Vector} />
         </div>
       </div>
 
@@ -28,7 +28,7 @@ function Services() {
             <img src={Group_36} className="ser-images" />
           </div>
           <div className="ser-texts">
-            <p className="ser-title">
+            <p className="ser-num-title">
               <span className="ser-nums">01.</span> Analysis
             </p>
             <p className="ser-text">
