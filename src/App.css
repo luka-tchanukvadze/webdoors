@@ -434,7 +434,7 @@ line-height: normal;
   align-items: center;
   margin-top: 7rem;
   width: 100%;
-  background-color: #292734;
+  /* background-color: #292734; */
 }
 
 /* news head */
@@ -464,9 +464,10 @@ line-height: normal;
 .news-bottom{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; /* Updated to stretch to the height of the parent */
   width: 100%;
-  background-color: rgb(57, 28, 28);
+  /* background-color: rgb(57, 28, 28); */
+  position: relative;
 }
 
 .news-text-2{
@@ -520,36 +521,58 @@ line-height: normal;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 50%;
-  box-sizing: border-box;
-  /* position: absolute; */
-  /* top: 0;
-  right: 0;
-  height: 100%;  */
-  overflow: hidden;
+  align-items: flex-end;
   z-index: 1;
-  margin: 2rem;
-  background-color: rgb(81, 51, 111);
+  /* background-color: rgb(81, 51, 111); */
+  flex: 0 0 60%;
+  /* width: 50%; */
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
+  /* margin: 2rem; */
+  /* position: relative; */
+  transform: translateX(-6.5rem);
 }
 
 .news-img-con{
-  width: 50%;
-  height: 100%;
+  /* width: 50%; */
+  /* height: 100%; */
+  /* position: relative; */
   z-index: 0;
-  background-color: rgb(43, 43, 82);
+  /* background-color: rgb(43, 43, 82); */
+  /* background: linear-gradient(266deg, #000 3.01%, rgba(40, 38, 68, 0.00) 71.79%); */
+  /* z-index: 5; */
+  flex: 0 0 60%;
+  transform: translateX(4.5rem);
+  position: relative;
 }
 
 .news-img{
   width: 100%;
-  /* height: auto; */
-  height: 100%;
-  display: block;
   padding: 0;
   margin: 0;
   overflow: hidden;
+  /* background: linear-gradient(266deg, #000 3.01%, rgba(40, 38, 68, 0.00) 71.79%); */
 }
 
+.gradient1{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(266deg, #000 3.01%, rgba(40, 38, 68, 0.00) 71.79%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.gradient2{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(266deg, #000 3.01%, rgba(40, 38, 68, 0.00) 71.79%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 7;
+  transform: rotate(180deg);
+}
 
 
 /* footer  */

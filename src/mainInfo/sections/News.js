@@ -13,6 +13,7 @@ function News() {
         <p className="news-text-1">Read News about web</p>
         <img className="vector" src={Vector} />
       </div>
+
       <div className="news-bottom">
         <div className="news-texts" style={{ order: 2 }}>
           <p className="news-text-2">Lorem ipsum dolor amet</p>
@@ -31,10 +32,14 @@ function News() {
         </div>
         <div className="news-img-con">
           <img className="news-img" src={news1} />
+          <div className="gradient1"></div>
         </div>
       </div>
       <div className="news-bottom">
-        <div className="news-texts news-texts-2">
+        <div
+          style={{ alignItems: "flex-start", transform: "translateX(6.5rem)" }}
+          className="news-texts news-texts-2"
+        >
           <p className="news-text-2">Lorem ipsum dolor amet</p>
           <p className="news-text-3">11 November 2021</p>
           <p className="news-text-4">
@@ -49,8 +54,12 @@ function News() {
             <p className="news-text-5">Read more</p>
           </div>
         </div>
-        <div className="news-img-con">
+        <div
+          style={{ transform: "translateX(-5rem)" }}
+          className="news-img-con"
+        >
           <img className="news-img" src={news2} />
+          <div className="gradient2"></div>
         </div>
       </div>
     </section>
