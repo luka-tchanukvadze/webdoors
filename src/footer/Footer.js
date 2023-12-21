@@ -66,16 +66,32 @@ function Footer() {
             </div>
             <div className="footer-text-info">
               <div className="footer-text-info-left">
-                <p>Name: JSC Webdoors</p>
-                <p>Gov.Id: 405281216`</p>
+                <p>
+                  <span className="info-span">Name:</span> JSC Webdoors
+                </p>
+                <p>
+                  <span className="info-span">Gov.Id:</span> 405281216`
+                </p>
               </div>
               <div className="footer-text-info-right">
                 <div>
-                  <p>Telephone: +995 571507979</p>
-                  <p>Telephone2: +995 599339099</p>
-                  <p>Email: Info@Webdoors.Ge</p>
-                  <p>Address: 97 Akaki Tsereteli Ave</p>
-                  <p>Zip: 0179</p>
+                  <p>
+                    <span className="info-span">Telephone:</span> +995 571507979
+                  </p>
+                  <p>
+                    <span className="info-span">Telephone2:</span> +995
+                    599339099
+                  </p>
+                  <p>
+                    <span className="info-span">Email:</span> Info@Webdoors.Ge
+                  </p>
+                  <p>
+                    <span className="info-span">Address:</span> 97 Akaki
+                    Tsereteli Ave
+                  </p>
+                  <p>
+                    <span className="info-span">Zip:</span> 0179
+                  </p>
                 </div>
               </div>
             </div>

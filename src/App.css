@@ -597,6 +597,23 @@ text-align: center;
 .footer-text-info-right{
   flex: 1;
 }
+.info-span{
+  color: #D7E0E8;
+text-align: justify;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.875rem; /* 166.667% */
+}
+
+.footer-text-info-right{
+  color: #D7E0E8;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
 
 .footer-head img,
 .footer-web-logos img,
