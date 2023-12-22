@@ -219,7 +219,7 @@ body{
 .text-with-photos{
   display: flex;
   align-items: center;
-  /* gap: 2rem; */
+  gap: 3rem;
   flex: 1;
   position: relative;
 }
@@ -260,7 +260,7 @@ line-height: normal;
   transform: rotate(-32.914deg);
   flex-shrink: 0;
   position: absolute;
-  left: 41%;
+  left: 44%;
   bottom: -1rem;
   z-index: 3;
 }
