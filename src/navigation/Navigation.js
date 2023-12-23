@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import wb1 from "../images/wb1.png";
 import webLogo from "../images/webLogo.png";
 import Vector2 from "../images/Vector2.png";
 
 function Navigation() {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+
+      // Adjust the threshold as needed
+      const threshold = 100;
+
+      if (offset > threshold && !isFixed) {
+        setIsFixed(true);
+      } else if (offset <= threshold && isFixed) {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isFixed]);
+
   return (
     <nav className="navigation">
-      <section className="head">
+      <section className={`head ${isFixed ? "fixed" : ""}`}>
         <div className="nav-items">
           <p className="n">Services</p>
           <p className="n">Projects</p>
