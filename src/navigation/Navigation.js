@@ -80,8 +80,8 @@ function Navigation() {
             and development
           </p>
 
-          <div className="text-4">
-            <p>Need a Website?</p>
+          <div className="text-4-con">
+            <p className="text-4">Need a Website?</p>
             <svg
               className="arrow"
               xmlns="http://www.w3.org/2000/svg"

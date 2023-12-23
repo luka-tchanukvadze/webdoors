@@ -72,8 +72,6 @@ function Footer() {
             <div className="logos-flex">
               <div>
                 <img src={Rectangle_36} />
-              </div>
-              <div>
                 <img src={Rectangle_37} />
               </div>
             </div>
