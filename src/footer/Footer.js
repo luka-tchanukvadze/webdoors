@@ -27,17 +27,40 @@ function Footer() {
   return (
     <footer>
       <div className="footer-head">
-        <img src={Rectangle_46} />
-        <img src={Rectangle_9} />
-        <img src={Rectangle_14} />
-        <img src={Rectangle_16} />
-        <img src={image_3} />
-        <img src={Rectangle_19} />
-        <img src={image_6} />
-        <img src={Rectangle_8} />
-        <img src={image_4} />
-        <img src={Rectangle_11} />
-        <img src={image_5} />
+        <div>
+          <img src={Rectangle_46} />
+        </div>
+
+        <div>
+          <img src={Rectangle_9} />
+        </div>
+        <div>
+          <img src={Rectangle_14} />
+        </div>
+        <div>
+          <img src={Rectangle_16} />
+        </div>
+        <div>
+          <img src={image_3} />
+        </div>
+        <div>
+          <img src={Rectangle_19} />
+        </div>
+        <div>
+          <img src={image_6} />
+        </div>
+        <div>
+          <img src={Rectangle_8} />
+        </div>
+        <div>
+          <img src={image_4} />
+        </div>
+        <div>
+          <img src={Rectangle_11} />
+        </div>
+        <div>
+          <img src={image_5} />
+        </div>
       </div>
 
       <div className="footer-bottom">
@@ -47,8 +70,12 @@ function Footer() {
               <img className="webdoors-logo" src={Rectangle_35} />
             </div>
             <div className="logos-flex">
-              <img src={Rectangle_36} />
-              <img src={Rectangle_37} />
+              <div>
+                <img src={Rectangle_36} />
+              </div>
+              <div>
+                <img src={Rectangle_37} />
+              </div>
             </div>
           </div>
         </div>
@@ -94,6 +121,9 @@ function Footer() {
                   </p>
                 </div>
               </div>
+            </div>
+            <div className="line-2">
+              <img src={Line_13} />
             </div>
           </div>
         </div>

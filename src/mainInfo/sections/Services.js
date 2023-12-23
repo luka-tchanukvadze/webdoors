@@ -42,9 +42,8 @@ function Services() {
             style={{
               background:
                 "linear-gradient(90deg, #1FB0F3 -0.4%, #9DDCFA 99.14%)",
-              transform: "rotate(312deg)",
             }}
-            className="square-1"
+            className="square-1 group-1"
           ></div>
         </div>
 
@@ -56,23 +55,21 @@ function Services() {
             <img src={Group_35} className="ser-images" />
           </div>
           <div className="ser-texts">
-            <p className="ser-title">
+            <p className="ser-num-title">
               <span className="ser-nums">02.</span> Wireframing
             </p>
             <p className="ser-text">
-              We work with our clients to gather the requirements, use cases,
-              process specifications and conduct in-depth research on
-              demographics, behavior patterns, and target audiences to refine
-              your idea and create a strong app foundation
+              Our experienced UI/UX designers will create wireframes to
+              visualize the client’s concept and ideas that clearly define the
+              user journey
             </p>
           </div>
           <div
             style={{
               background:
                 "linear-gradient(90deg, #1FB0F3 -0.4%, #7B5DFA 99.14%)",
-              transform: "rotate(45deg)",
             }}
-            className="square-1"
+            className="square-1 group-2"
           ></div>
         </div>
 
@@ -81,23 +78,21 @@ function Services() {
             <img src={Group_34} className="ser-images" />
           </div>
           <div className="ser-texts">
-            <p className="ser-title">
+            <p className="ser-num-title">
               <span className="ser-nums">03.</span> Prototyping
             </p>
             <p className="ser-text">
-              We work with our clients to gather the requirements, use cases,
-              process specifications and conduct in-depth research on
-              demographics, behavior patterns, and target audiences to refine
-              your idea and create a strong app foundation
+              We lead the industry with best in class prototype design
+              techniques that give you an earlier heads up on the look and feel,
+              during the development cycle.
             </p>
           </div>
           <div
             style={{
               background:
                 "linear-gradient(90deg, #F3CC1F -0.4%, #7B5DFA 99.14%)",
-              transform: "rotate(312deg)",
             }}
-            className="square-1"
+            className="square-1 group-1"
           ></div>
         </div>
 
@@ -109,23 +104,21 @@ function Services() {
             <img src={Group_33} className="ser-images" />
           </div>
           <div className="ser-texts">
-            <p className="ser-title">
+            <p className="ser-num-title">
               <span className="ser-nums">04.</span> Design & code
             </p>
             <p className="ser-text">
-              We work with our clients to gather the requirements, use cases,
-              process specifications and conduct in-depth research on
-              demographics, behavior patterns, and target audiences to refine
-              your idea and create a strong app foundation
+              We use Human Interface Guidelines and follow industry best
+              practices during our design and coding process. Our capabilities
+              deliver sleek and responsive apps to give you a competitive edge.
             </p>
           </div>
           <div
             style={{
               background:
                 "linear-gradient(90deg, #F3CC1F 13.59%, #FB634F 99.14%)",
-              transform: "rotate(45deg)",
             }}
-            className="square-1"
+            className="square-1 group-2"
           ></div>
         </div>
 
@@ -134,23 +127,21 @@ function Services() {
             <img src={Group_32} className="ser-images" />
           </div>
           <div className="ser-texts">
-            <p className="ser-title">
+            <p className="ser-num-title">
               <span className="ser-nums">05.</span> Testing & QA
             </p>
             <p className="ser-text">
-              We work with our clients to gather the requirements, use cases,
-              process specifications and conduct in-depth research on
-              demographics, behavior patterns, and target audiences to refine
-              your idea and create a strong app foundation
+              We rigorously test the performance app performance to Industry
+              standards to evaluate its scalability, responsiveness, and
+              stability.
             </p>
           </div>
           <div
             style={{
               background:
                 "linear-gradient(90deg, #F31F46 -0.4%, #FB634F 99.14%)",
-              transform: "rotate(132deg)",
             }}
-            className="square-1"
+            className="square-1 group-1"
           ></div>
         </div>
 
@@ -163,14 +154,12 @@ function Services() {
             <img src={Group_31} className="ser-images" />
           </div>
           <div className="ser-texts">
-            <p className="ser-title">
+            <p className="ser-num-title">
               <span className="ser-nums">06.</span> Deployment
             </p>
             <p className="ser-text">
-              We work with our clients to gather the requirements, use cases,
-              process specifications and conduct in-depth research on
-              demographics, behavior patterns, and target audiences to refine
-              your idea and create a strong app foundation
+              Once the app fulfills our client’s requirements and expectations,
+              we deploy the app according to the launch plan.
             </p>
           </div>
         </div>

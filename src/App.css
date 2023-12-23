@@ -43,6 +43,10 @@ body{
   letter-spacing: -0.01688rem;
 }
 
+.person-res{
+  display: none;
+}
+
 
 .logo{
   margin-left: auto;
@@ -219,6 +223,7 @@ body{
 .text-with-photos{
   display: flex;
   align-items: center;
+  /* justify-content: start; */
   gap: 3rem;
   flex: 1;
   position: relative;
@@ -255,14 +260,24 @@ line-height: normal;
 }
 
 .square-1{
-  width: 10.31956rem;
+  /* width: 10.31956rem; */
+  width: 13%;
   height: 1.75694rem;
   transform: rotate(-32.914deg);
   flex-shrink: 0;
   position: absolute;
-  left: 44%;
-  bottom: -1rem;
+  left: 43%;
+  bottom: 0rem;
   z-index: 3;
+  /* border-radius: 100%; */
+}
+
+.group-1{
+  transform: rotate(312deg);
+}
+.group-2{
+  transform: rotate(45deg);
+
 }
 
 .square-2{
@@ -272,16 +287,18 @@ line-height: normal;
   background: linear-gradient(270deg, #9DDCFA 0%, rgba(157, 220, 250, 0.50) 34.29%, rgba(157, 220, 250, 0.20) 53.36%, rgba(157, 220, 250, 0.10) 64.71%, rgba(157, 220, 250, 0.05) 73.15%, rgba(157, 220, 250, 0.00) 87.12%);
   position: absolute;
   left: -40%;
+  z-index: 4;
 }
 
 .square-3{
   width: 100%;
   height: 2.19619rem;
   flex-shrink: 1;
-  background: linear-gradient(90deg, #F31F46 0%, #111015 100%);
+  background: linear-gradient(90deg, #F31F46 0%, #1110152a 100%);
   position: absolute;
   right: -40%;
   overflow: hidden;
+  z-index: 4;
 }
 
 .ser-title{
@@ -340,9 +357,10 @@ line-height: normal;
 }
 
 .projects-text-con{
-  /* width: 87%; */
   flex: 1;
-  margin-top: 3rem;
+  margin: 3rem 0;
+  width: 50%;
+  align-items: center;
 }
 
 .projects-text{
@@ -523,24 +541,13 @@ line-height: normal;
   justify-content: center;
   align-items: flex-end;
   z-index: 1;
-  /* background-color: rgb(81, 51, 111); */
   flex: 0 0 60%;
-  /* width: 50%; */
-  /* box-sizing: border-box; */
-  /* overflow: hidden; */
-  /* margin: 2rem; */
   /* position: relative; */
   transform: translateX(-6.5rem);
 }
 
 .news-img-con{
-  /* width: 50%; */
-  /* height: 100%; */
-  /* position: relative; */
   z-index: 0;
-  /* background-color: rgb(43, 43, 82); */
-  /* background: linear-gradient(266deg, #000 3.01%, rgba(40, 38, 68, 0.00) 71.79%); */
-  /* z-index: 5; */
   flex: 0 0 60%;
   transform: translateX(4.5rem);
   position: relative;
@@ -584,9 +591,17 @@ line-height: normal;
   display: flex;
   flex-wrap: wrap;
   gap: 3em;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   
+  /* flex-shrink: 1; */
+}
+
+.footer-head div img{
+  object-fit: cover;
+  flex: 1;
+  max-width: 100%;
+  height: auto;
 }
 
 /* footer bottom  */
@@ -605,6 +620,10 @@ line-height: normal;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
+}
+
+.logos-flex{
+  display: flex;
 }
 
 .logos-flex img{
@@ -640,6 +659,10 @@ text-align: center;
   justify-content: space-between;
   flex: 1;
   
+}
+
+.line-2{
+  display: none;
 }
 
 .footer-bottom-info{
@@ -691,6 +714,267 @@ line-height: 1.875rem; /* 166.667% */
 .logos-flex img,
 .media-con img, 
 .line img {
-  max-width: 100%; /* Set max-width to make images responsive */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure images don't exceed their natural size */
+  height: auto;
+}
+
+
+@media (width >= 1921px){
+  .square-1{
+    border-radius: 100%;
+  }
+  body{
+    margin: 0 25rem;
+  }
+}
+
+/* @media (width <= 1110){
+  .n{
+    display: none;
+  }
+
+  .person-res{
+    display: block;
+  }
+} */
+
+@media (max-width: 1500px) {
+  /* Services  */
+
+  .square-2{
+    width: 95%;
+  }
+  .square-3{
+    width: 95%;
+  }
+
+  .group-1{
+    transform: rotate(305deg);
+  }
+  .group-2{
+    transform: rotate(52deg);
+  }
+
+}
+@media (max-width: 1310px) {
+
+  body{
+    margin: 0 10rem;
+  }
+
+}
+
+@media (max-width: 1220px) {
+/* Services  */
+  .group-1{
+    transform: rotate(300deg);
+  }
+  .group-2{
+    transform: rotate(57deg);
+  }
+}
+
+@media (max-width: 1110px) {
+
+  body{
+    margin: 0 5rem;
+  }
+
+  /* Navigation */
+  .n {
+    display: none;
+  }
+
+  .person-res {
+    display: block;
+  }
+
+  .person-con{
+    display: none;
+  }
+
+  /* Services  */
+  .group-1{
+    transform: rotate(270deg);
+  }
+  .group-2{
+    transform: rotate(90deg);
+  }
+
+  /* Projexts  */
+
+  .projects-text-con{
+    width: 70%;
+  }
+
+  .projects-text{
+    font-size: 1rem;
+  }
+  .proj-span{
+    font-size: 1.125rem;
+  }
+
+  
+
+  .projects-text-2{
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .projects-text-3{
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+
+  .projects-flex{
+    gap: 2rem;
+  }
+
+}
+
+@media (max-width: 950px) {
+
+  /* Services  */
+  .square-1, .square-2, .square-3{
+    display: none;
+  }
+
+  .text-with-photos{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: start; */
+    align-self: flex-start;
+    gap: 0rem;
+    flex: 1;
+  }
+
+  .ser-img{
+    order: 1;
+  }
+  .ser-texts{
+    order: 2;
+    text-align: center;
+  }
+
+  .footer-head{
+    gap: 0em;
+    justify-content: space-betweens;
+    align-items: center;
+    
+    /* flex-shrink: 1; */
+  }
+  
+ 
+  .footer-head div img{
+    max-width: 60%;
+   
+  }
+
+.footer-web-logos img,
+.logos-flex img,
+.media-con img {
+  max-width: 50%; /* Ensure images don't exceed their natural size */
+  height: auto;
+}
+
+}
+
+@media (max-width: 800px) {
+
+  body{
+    margin: 0 2rem;
+  }
+
+  /* Services  */
+  .ser-img img{
+    width: 5.17888rem;
+    height: 5.17888rem;
+  }
+
+  .ser-num-title{
+    font-size: 1.125rem;
+  }
+
+  .ser-text{
+    font-size: 1rem;
+  }
+
+  /* news */
+
+  .news-text-1{
+    font-size: 1.5rem;
+  }
+  .news-text-2{
+    font-size: 1.125rem;
+    letter-spacing: normal;
+  }
+  .news-text-3{
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+
+  .news-text-4{
+    font-size: 1rem;
+  }
+  .news-text-5{
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+
+
+  /* Footer  */
+
+  .footer-bottom{
+    flex-direction: column;
+  }
+
+  .footer-text-info{
+    display: none;
+  }
+
+  .footer-bottom-info{
+    order: 1;
+    margin: 8rem 0 3rem 0;
+  }
+
+  .footer-bottom-logo{
+    order: 2;
+    background-color: rebeccapurple;
+  }
+
+  .logos-flex{
+    align-self: flex-start;
+    flex: 1;
+  }
+
+  .webdoors-logo{
+    display: none;
+  }
+
+  .line{
+    display: none;
+  }
+
+  .line-2{
+    display: block;
+    align-self: flex-end;
+  }
+
+  .media-con{
+    margin-bottom: 1rem;
+  }
+  .footer-text{
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 745px) {
+  /* footer */
+  .footer-head{
+    display: none;
+}
+
 }

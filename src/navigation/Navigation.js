@@ -1,6 +1,7 @@
 import React from "react";
 import wb1 from "../images/wb1.png";
 import webLogo from "../images/webLogo.png";
+import Vector2 from "../images/Vector2.png";
 
 function Navigation() {
   return (
@@ -10,6 +11,7 @@ function Navigation() {
           <p className="n">Services</p>
           <p className="n">Projects</p>
           <p className="n">About</p>
+          <img className="person-res" src={Vector2} />
         </div>
 
         <div className="logo">
