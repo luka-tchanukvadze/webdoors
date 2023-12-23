@@ -60,6 +60,17 @@ body{
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.01688rem;
+  text-decoration: none;
+  color: white;
+}
+
+.n:hover{
+  cursor: crosshair;
+  opacity: .6;
+}
+.links:hover{
+  cursor: crosshair;
+  opacity: .6;
 }
 
 .person-res{
@@ -521,13 +532,17 @@ line-height: normal;
   line-height: normal;
   letter-spacing: -0.01875rem;
   text-transform: uppercase;
+  
 }
 
 .news-button{
+  background: #272431;
   display: inline-flex;
+  padding: 1.25rem 3.625rem 1.25rem 4.4375rem;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
+  border-radius: 1rem;
 }
 
 

@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import wb1 from "../images/wb1.png";
 import webLogo from "../images/webLogo.png";
 import Vector2 from "../images/Vector2.png";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const [isFixed, setIsFixed] = useState(false);
+  const [menuIsClicked, setMenuIsClicked] = useState(false);
+  const [personIsClicked, setPersonIsClicked] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,14 +30,45 @@ function Navigation() {
     };
   }, [isFixed]);
 
+  useEffect(() => {
+    if (menuIsClicked) {
+      setPersonIsClicked(false);
+    }
+    if (personIsClicked) {
+      setMenuIsClicked(false);
+    }
+  }, [personIsClicked, menuIsClicked]);
+
+  const handleClickPerson = () => {
+    // return setPersonIsClicked((prev) => !prev);
+    setPersonIsClicked((prev) => !prev);
+    setMenuIsClicked(false);
+  };
+
+  const handleClickMenu = () => {
+    // return setMenuIsClicked((prev) => !prev);
+    setMenuIsClicked((prev) => !prev);
+    setPersonIsClicked(false);
+  };
+
   return (
     <nav className="navigation">
       <section className={`head ${isFixed ? "fixed" : ""}`}>
         <div className="nav-items">
-          <p className="n">Services</p>
-          <p className="n">Projects</p>
-          <p className="n">About</p>
-          <img className="person-res" src={Vector2} />
+          <Link to="something" className="n">
+            Services
+          </Link>
+          <Link to="something" className="n">
+            Projects
+          </Link>
+          <Link to="something" className="n">
+            About
+          </Link>
+          <img
+            onClick={handleClickPerson}
+            className="person-res"
+            src={Vector2}
+          />
         </div>
 
         <div className="logo">
@@ -42,7 +76,7 @@ function Navigation() {
         </div>
 
         <div className="nav-items-right-side">
-          <div className="person-con">
+          <div onClick={handleClickPerson} className="person-con">
             <svg
               className="person"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,9 +93,21 @@ function Navigation() {
                 fill-opacity="0.9"
               />
             </svg>
+            <div
+              style={{
+                display: `${personIsClicked ? "block" : "none"}`,
+                position: "absolute",
+                top: "5rem",
+                right: "2rem",
+                backgroundColor: "gray",
+                padding: "3rem",
+              }}
+            >
+              something goes here
+            </div>
           </div>
 
-          <div>
+          <div onClick={handleClickMenu}>
             <svg
               className="menu"
               xmlns="http://www.w3.org/2000/svg"
@@ -82,6 +128,18 @@ function Navigation() {
                 stroke-linejoin="round"
               />
             </svg>
+            <div
+              style={{
+                display: `${menuIsClicked ? "block" : "none"}`,
+                position: "absolute",
+                top: "5rem",
+                right: "0rem",
+                backgroundColor: "gray",
+                padding: "3rem",
+              }}
+            >
+              dark mode
+            </div>
           </div>
         </div>
       </section>
@@ -103,22 +161,28 @@ function Navigation() {
             and development
           </p>
 
-          <div className="text-4-con">
-            <p className="text-4">Need a Website?</p>
-            <svg
-              className="arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="91"
-              height="24"
-              viewBox="0 0 91 24"
-              fill="none"
-            >
-              <path
-                d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8285 1.17157 13.5 2 13.5L2 10.5ZM90.0607 13.0607C90.6464 12.4749 90.6464 11.5252 90.0607 10.9394L80.5147 1.39343C79.9289 0.807642 78.9792 0.807642 78.3934 1.39343C77.8076 1.97922 77.8076 2.92896 78.3934 3.51475L86.8787 12L78.3934 20.4853C77.8076 21.0711 77.8076 22.0208 78.3934 22.6066C78.9792 23.1924 79.9289 23.1924 80.5147 22.6066L90.0607 13.0607ZM2 13.5L89 13.5V10.5L2 10.5L2 13.5Z"
-                fill="white"
-              />
-            </svg>
-          </div>
+          <Link
+            style={{ textDecoration: "none" }}
+            to="something"
+            className="links"
+          >
+            <div className="text-4-con">
+              <p className="text-4">Need a Website?</p>
+              <svg
+                className="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="91"
+                height="24"
+                viewBox="0 0 91 24"
+                fill="none"
+              >
+                <path
+                  d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8285 1.17157 13.5 2 13.5L2 10.5ZM90.0607 13.0607C90.6464 12.4749 90.6464 11.5252 90.0607 10.9394L80.5147 1.39343C79.9289 0.807642 78.9792 0.807642 78.3934 1.39343C77.8076 1.97922 77.8076 2.92896 78.3934 3.51475L86.8787 12L78.3934 20.4853C77.8076 21.0711 77.8076 22.0208 78.3934 22.6066C78.9792 23.1924 79.9289 23.1924 80.5147 22.6066L90.0607 13.0607ZM2 13.5L89 13.5V10.5L2 10.5L2 13.5Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </Link>
 
           <div>
             <img className="web-logo" src={webLogo} />

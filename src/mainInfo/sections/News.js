@@ -4,6 +4,7 @@ import Vector from "../../images/Vector.png";
 import Ellipse_41 from "../../images/Ellipse 41.png";
 import news1 from "../../images/news1.png";
 import news2 from "../../images/news2.png";
+import { Link } from "react-router-dom";
 
 function News() {
   return (
@@ -27,7 +28,13 @@ function News() {
           </p>
           <div className="news-button">
             <img className="elipse" src={Ellipse_41} />
-            <p className="news-text-5">Read more</p>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="something"
+              className="links"
+            >
+              <p className="news-text-5">Read more</p>
+            </Link>
           </div>
         </div>
         <div className="news-img-con">
@@ -51,7 +58,13 @@ function News() {
           </p>
           <div className="news-button">
             <img className="elipse" src={Ellipse_41} />
-            <p className="news-text-5">Read more</p>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="something"
+              className="links"
+            >
+              <p className="news-text-5">Read more</p>
+            </Link>
           </div>
         </div>
         <div

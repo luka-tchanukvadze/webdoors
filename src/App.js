@@ -1,16 +1,23 @@
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
 import "./App.css";
-import Navigation from "./navigation/Navigation";
-import MainInfo from "./mainInfo/MainInfo";
-import Footer from "./footer/Footer";
+import Layout from "./pages/Layout";
+import Something from "./pages/Something";
 
 function App() {
-  return (
-    <div className="d">
-      <Navigation />
-      <MainInfo />
-      <Footer />
-    </div>
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/">
+        <Route index element={<Layout />} />
+        <Route path="something" element={<Something />} />
+      </Route>
+    )
   );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

@@ -7,6 +7,7 @@ import Group_35 from "../../images/Group 35.png";
 import Group_36 from "../../images/Group 36.png";
 import Group_83 from "../../images/Group 83.png";
 import Vector from "../../images/Vector.png";
+import { Link } from "react-router-dom";
 
 function Services() {
   return (
@@ -17,7 +18,13 @@ function Services() {
         </div>
         <div className="ser-title">
           <p>Services</p>
-          <img className="vector serv-vec" src={Vector} />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="something"
+            className="links"
+          >
+            <img className="vector serv-vec" src={Vector} />
+          </Link>
         </div>
       </div>
 

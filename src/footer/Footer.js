@@ -22,6 +22,7 @@ import youtube from "../images/Footer/social media/youtube.png";
 import dribble from "../images/Footer/social media/dribble.png";
 import Group from "../images/Footer/social media/Group.png";
 import Line_13 from "../images/Footer/Line 13.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -79,16 +80,22 @@ function Footer() {
         </div>
         <div className="footer-bottom-info">
           <div className="footer-social">
-            <div className="media-con">
-              <img src={vector} />
-              <img src={ln} />
-              <img src={twitter} />
-              <img src={Group_81} />
-              <img src={fb} />
-              <img src={youtube} />
-              <img src={dribble} />
-              <img src={Group} />
-            </div>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="something"
+              className="links"
+            >
+              <div className="media-con">
+                <img src={vector} />
+                <img src={ln} />
+                <img src={twitter} />
+                <img src={Group_81} />
+                <img src={fb} />
+                <img src={youtube} />
+                <img src={dribble} />
+                <img src={Group} />
+              </div>
+            </Link>
             <div className="footer-text-info">
               <div className="footer-text-info-left">
                 <p>
