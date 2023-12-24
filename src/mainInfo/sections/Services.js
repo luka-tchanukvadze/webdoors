@@ -53,8 +53,23 @@ function Services() {
             className="square-1 group-1"
           ></div>
         </div>
+        {/* <div className="ser-head for-responsive">
+          <div>
+            <img className="group-83" src={Group_83} />
+          </div>
+          <div className="ser-title">
+            <p>Services</p>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="something"
+              className="links"
+            >
+              <img className="vector serv-vec" src={Vector} />
+            </Link>
+          </div>
+        </div> */}
 
-        <div className="text-with-photos">
+        <div className="text-with-photos ">
           <div
             style={{ order: "2", justifyContent: "start" }}
             className="ser-img"

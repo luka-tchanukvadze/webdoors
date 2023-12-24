@@ -40,6 +40,7 @@ function Navigation() {
   }, [personIsClicked, menuIsClicked]);
 
   const handleClickPerson = () => {
+    // alert("heu");
     // return setPersonIsClicked((prev) => !prev);
     setPersonIsClicked((prev) => !prev);
     setMenuIsClicked(false);
@@ -64,11 +65,27 @@ function Navigation() {
           <Link to="something" className="n">
             About
           </Link>
-          <img
-            onClick={handleClickPerson}
-            className="person-res"
-            src={Vector2}
-          />
+
+          <div>
+            <img
+              onClick={handleClickPerson}
+              className="person-res"
+              src={Vector2}
+            />{" "}
+            <div
+            // style={{
+            //   display: `${personIsClicked ? "block" : "none"}`,
+            //   // display: "block",
+            //   position: "absolute",
+            //   top: "5rem",
+            //   left: "2rem",
+            //   backgroundColor: "gray",
+            //   padding: "3rem",
+            // }}
+            >
+              something goes here
+            </div>
+          </div>
         </div>
 
         <div className="logo">
@@ -96,6 +113,7 @@ function Navigation() {
             <div
               style={{
                 display: `${personIsClicked ? "block" : "none"}`,
+                // display: "block",
                 position: "absolute",
                 top: "5rem",
                 right: "2rem",
@@ -103,7 +121,7 @@ function Navigation() {
                 padding: "3rem",
               }}
             >
-              something goes here
+              something goes here!
             </div>
           </div>
 
