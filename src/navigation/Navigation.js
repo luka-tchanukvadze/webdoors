@@ -72,19 +72,19 @@ function Navigation() {
               className="person-res"
               src={Vector2}
             />{" "}
-            <div
-            // style={{
-            //   display: `${personIsClicked ? "block" : "none"}`,
-            //   // display: "block",
-            //   position: "absolute",
-            //   top: "5rem",
-            //   left: "2rem",
-            //   backgroundColor: "gray",
-            //   padding: "3rem",
-            // }}
+            {/* <div
+            style={{
+              display: `${personIsClicked ? "block" : "none"}`,
+              // display: "block",
+              position: "absolute",
+              top: "5rem",
+              left: "2rem",
+              backgroundColor: "gray",
+              padding: "3rem",
+            }}
             >
               something goes here
-            </div>
+            </div> */}
           </div>
         </div>
 
